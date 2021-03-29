@@ -1768,7 +1768,13 @@ export default (() => {
 							<Text text-align="center" color="#ffffff">
 								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
-							<Button background="--color-secondary" color="#000000">
+							<Button
+								background="--color-secondary"
+								color="#000000"
+								border-radius="24px"
+								padding="12px 34px 12px 34px"
+								text-transform="uppercase"
+							>
 								Join
 							</Button>
 						</Box>
@@ -3475,7 +3481,38 @@ export default (() => {
 						min-height="320px"
 						text-align="left"
 						display="flex"
-					/>
+					>
+						<Box
+							width="100%"
+							height="500px"
+							background="#ffffff"
+							border-color="#d9d9d9"
+							border-width="4px"
+							border-radius="4px"
+							border-style="solid"
+							align-self="auto"
+							display="flex"
+							flex-direction="column"
+							align-items="center"
+							justify-content="center"
+						>
+							<Icon
+								category="fa"
+								icon={FaTree}
+								border-color="#b00000"
+								color="#cf0000"
+								font="4em sans-serif"
+								text-align="center"
+								flex-direction="row"
+							/>
+							<Text font="--headline3">
+								Woods & Mountains
+							</Text>
+							<Text color="--grey">
+								43 places
+							</Text>
+						</Box>
+					</Box>
 					<Text
 						text-align="center"
 						as="p"
@@ -3717,6 +3754,7 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
+		<Icon category="md" icon={MdFace} />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
